@@ -93,14 +93,14 @@ const JobDashboard = () => {
           {/* Navigation */}
           <nav className="nav bg-dark nav-pills nav-justified mb-3">
             <a
-              href="#"
+              href="www.google.com"
               className={`nav-item nav-link ${activeTab === "all" ? "active" : ""}`}
               onClick={() => setActiveTab("all")}
             >
               All Jobs
             </a>
             <a
-              href="#"
+              href="www.google.com"
               className={`nav-item nav-link ${activeTab === "saved" ? "active" : ""}`}
               onClick={() => setActiveTab("saved")}
             >
