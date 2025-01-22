@@ -9,7 +9,7 @@ import MainContent from "../Components/Blogs/MainContent.js"; // Corrected path
 import Portfolio  from '../Components/Portfolio.js';
 import JobcardViews from'../Components/JobcardViews.js';
 import Blogdetails from '../Components/Blogdetails.js';
-import Sharec from '../Components/Sharec.js';
+import Footer from './Footer.js';
 import AdminDashboard from "../Components/AdminDashboard.js";
 
 const AppRouter = () => {
@@ -26,7 +26,7 @@ const AppRouter = () => {
         <Route path="/Portfolio" element={<Portfolio/>}/>
         <Route path="/JobcardViews" element={<JobcardViews/>}/>
         <Route path="/Blogdetails" element={<Blogdetails/>}/>
-        <Route path="/Sharec" element={<Sharec/>}/>
+        <Route path="/Footer" element={<Footer/>}/>
         <Route path="/AdminDashboard"element={<AdminDashboard/>}/>
       </Routes>
     </Router>
