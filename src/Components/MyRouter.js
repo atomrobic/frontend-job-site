@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../Components/Home.js";
 import Login from "../Components/Login.js";
 import Signup from "../Components/Signup.js";
 import Dashboard from '../Components/dashboard.js'; // Match the exact file name
@@ -18,10 +17,9 @@ const AppRouter = () => {
     <Router>
       {/* Navbar appears on every page */}
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/jobcards" element={<JobCards />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/maincontent" element={<MainContent />} />
