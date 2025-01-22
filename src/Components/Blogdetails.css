@@ -1,0 +1,15 @@
+body{
+
+    background-color: black;
+}
+.custom-container {
+    background-color: #030303c1; /* Dark gray for a better "black-300" look */
+    min-height: 100vh; /* Ensures full viewport height */
+    padding: 16px; /* Matches p-4 from Tailwind */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for elevation */
+  }
+  .h3{
+
+    color: #ecdfdf;
+  }

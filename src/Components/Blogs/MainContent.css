@@ -1,0 +1,91 @@
+.images_blog {
+  width: 250px; /* Fixed width for the image */
+  height: 110px; /* Fixed height */
+  display: block;
+  position: relative;
+  left: 20px;
+}
+
+.avatar-container {
+  position: relative;
+}
+
+.avatar-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: -2px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.avatar {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* Like, comment, and share buttons */
+.icon-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-button {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #000;
+}
+
+/* Link styles */
+.link {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fefafa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.CardContent {
+  background-color: #555;
+}
+
+.link {
+  color: #1e90ff; /* Customize link color if needed */
+}
+
+.icon-buttons .icon-button {
+  color: rgb(21, 20, 20); /* Ensure icons remain visible */
+}
+
+.discrp {
+  color: #eae2e2e5;
+}
+.icons-button{
+
+position: relative;
+top: 20px;
+left: 190px;
+color: #000;
+}
+.iconss-button{
+
+
+  position: relative;
+  bottom: 120px;
+  left: 20px;
+  background-color: #fefafa;
+}
+strong{
+
+  color: #fff;
+}

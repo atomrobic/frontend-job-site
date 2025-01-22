@@ -1,0 +1,9 @@
+/* dashboard.module.css */
+.background {
+    background-color: #070707; /* Dark background color */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center;
+    min-height: 100vh; /* Make sure it covers the full viewport height */
+    color: white; /* Ensure text is readable */
+  }
+  

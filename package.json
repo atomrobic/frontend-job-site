@@ -1,0 +1,65 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A React app using Material-UI components and TailwindCSS for styling.",
+  "main": "index.tsx",
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^44.1.0",
+    "@ckeditor/ckeditor5-react": "^9.4.0",
+    "@coreui/react": "^5.4.1",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@mui/icons-material": "^6.4.0",
+    "@mui/joy": "^5.0.0-beta.51",
+    "@mui/material": "latest",
+    "@tinymce/tinymce-react": "^5.1.1",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "cra-template": "1.2.0",
+    "mdb-react-ui-kit": "^9.0.0",
+    "prop-types": "^15.8.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^7.1.1",
+    "sass": "^1.83.4",
+    "typescript": "latest",
+    "web-vitals": "^4.2.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "react-app-rewired": "^2.2.1",
+    "react-scripts": "latest",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

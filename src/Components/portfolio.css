@@ -1,0 +1,350 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000; /* Full black background */
+    color: #fff; /* White text */
+    margin: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #000; /* Full black background */
+    color: #fff; /* White text */
+    margin-bottom: 0;
+}
+
+/* Profile Card */
+/* Profile Card */
+.profile-card {
+    position: fixed; /* Fix the profile card to a specific position */
+    top: 100px; /* Adjust distance from the top of the screen */
+    left: 20px; /* Adjust distance from the left of the screen */
+    margin-top: 0; /* Remove any extra margin to prevent displacement */
+    background-color: #000; /* Full black background */
+    border: 1px solid #0d0d0d; /* Dark gray border */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Slight white shadow */
+    padding: 20px;
+    color: #121111;
+    text-align: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+    width: 250px; /* Set a width for consistency */
+    height: auto; /* Allow flexible height based on content */
+}
+
+
+.profile-pic img {  
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #f9f7f7; /* White border around image */
+}
+
+.profile-card .profile-img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #d8d0d0; /* White text */
+}
+
+.profile-card p {
+    color: #ddd9d9; /* White text */
+}
+
+.sidebar-nav {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar-nav .nav-link {
+    display: block;
+    padding: 10px;
+    color: #0b0a0a; /* White text */
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.sidebar-nav .nav-link:hover {
+    background-color: #333; /* Dark hover effect */
+    color: #fff; /* White text */
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #000; /* Full black background */
+    border: 1px solid #e8e4e46c; /* Dark gray border */
+    padding: 80px;
+    box-shadow: 0 4px 6px rgba(150, 142, 142, 0.911); /* Slight shadow */
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #efe7e7f1; /* White text */
+    font-weight: bold;
+}
+
+/* Skill Cards */
+.skill-card {
+    background-color: #d3c3c31b;
+    height: auto; /* Remove fixed height for responsiveness */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    color: #f0ebeb; /* Slight background for skill cards */
+    border-radius: 8px;
+    border-color: #f0ebeb;
+    width: 100%;
+    max-width: 200px; /* Set max width to keep it within bounds */
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #f0eeee; /* White text */
+    margin-top: 10px; /* Space between the logo and skill name */
+    font-weight: 500;
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #000; /* Full black background */
+    border: 1px solid #676363; /* White border */
+    padding: 30px;
+}
+
+.project-card {
+    background-color: #030303; /* Full black background */
+    border: 1px solid #737171a6; /* White border */
+    padding: 20px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    color: #fefdfd; /* White text */
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 12px rgba(32, 32, 32, 0.2); /* Slight white hover effect */
+}
+
+.portfolio-container {
+    background-color: #030303;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #fff; /* White border around project images */
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #bdbbbb; /* White text */
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #969292; /* White text */
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1241dc; /* White text */
+    text-decoration: none;
+    border-bottom: 1px solid #fff; /* Underline effect */
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #000; /* Full black background */
+    border: 1px solid #5c5858; /* White border */
+    padding: 10px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* Slight white shadow */
+    color: #fff; /* White text */
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #fff; /* White text */
+    font-weight: bold;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact-section .form-label {
+    font-size: 1rem;
+    color: #060505; /* White text */
+}
+
+.contact-section .form-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff; /* White border */
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #000; /* Full black background */
+    color: #fff; /* White text */
+}
+
+.contact-section .submit-btn {
+    background-color: #000; /* Full black background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border: 1px solid #fff; /* White border */
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-section .submit-btn:hover {
+    background-color: #333; /* Darker black hover effect */
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    /* Adjust the container */
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Profile card adjustments */
+    .profile-card {
+        padding: 15px;
+    }
+
+    .profile-pic img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-card h5 {
+        font-size: 1rem;
+    }
+
+    /* Skills Section */
+    .skills-section {
+        padding: 10px;
+    }
+
+    .skill-card {
+        width: 100%;
+        height: 40px;
+        padding: 2px;
+    }
+
+    /* Projects Section */
+    .project-card {
+        padding: 10px;
+    }
+
+    .project-card h3 {
+        font-size: 1rem;
+    }
+
+    .project-card p {
+        font-size: 0.85rem;
+    }
+
+    /* Contact Section */
+    .contact-section .form-label,
+    .contact-section .form-input {
+        font-size: 0.9rem;
+    }
+
+    .contact-section .submit-btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* For smaller screens */
+    .skills-section {
+        padding: 2px;
+    }
+
+    .skills-section ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    }
+
+    /* Adjust profile card */
+    .profile-card {
+        padding: 10px;
+    }
+
+    .profile-pic img {
+        width: 60px;
+        height: 60px;
+    }
+}
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    /* Adjust the profile card for mobile */
+    .profile-card {
+        position: relative; /* Remove fixed positioning for smaller screens */
+        top: 20px;
+        left: auto;
+        margin: 10px auto; /* Center the card with automatic margins */
+        width: 90%; /* Allow the card to take up most of the screen width */
+        max-width: 400px; /* Optional: Limit the maximum width */
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Reduce shadow intensity */
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .profile-pic img {
+        width: 80px; /* Reduce profile picture size */
+        height: 80px;
+    }
+
+    .profile-card h5 {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    .profile-card p {
+        font-size: 0.9rem; /* Slightly smaller paragraph text */
+    }
+}
+
+@media (max-width: 640px) {
+    /* Further adjustments for very small screens */
+    .profile-card {
+        padding: 10px; /* Compact padding */
+    }
+
+    .profile-pic img {
+        width: 60px; /* Smaller profile picture */
+        height: 60px;
+    }
+
+    .profile-card h5 {
+        font-size: 0.9rem; /* Smaller font size for the heading */
+    }
+
+    .profile-card p {
+        font-size: 0.8rem; /* Smaller font size for paragraphs */
+    }
+}
+

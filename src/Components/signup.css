@@ -1,0 +1,229 @@
+/* Background Styling */
+.signup-background {
+    background: url('https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  /* Signup Card with Glass Effect */
+  .signup-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: rgba(39, 36, 36, 0.178); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(231, 225, 225, 0.219);
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(245, 240, 240, 0.934);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    background: url('https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-position: center;
+
+  }
+  
+  /* Name Fields (First Name and Username) Styling */
+  .name-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .input-group {
+    flex: 1;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.174);
+    font-size: 1rem;
+    color: #080707;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(147, 156, 166, 0.3);
+  }
+  
+  /* Other input fields */
+  .signup-card input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.952);
+    font-size: 1rem;
+    color: #080707;
+
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .signup-card input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(147, 156, 166, 0.3);
+  }
+  /* Signup Card Heading */
+.signup-card h2 {
+    color: white; /* Set the text color to white */
+  }
+  
+  /* Button Styling */
+  .signup-card button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #0f5c56f2, #385471);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .signup-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(4, 4, 4, 0.3);
+    color: #f6f5fa;
+  }
+  
+  .signup-card button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(10, 10, 10, 0.909);
+  }
+  /* Style for select dropdown to look like input field */
+.signup-card select.input-dropdown {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.881);
+    font-size: 1rem;
+    color: #080707;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus state styling for the dropdown */
+  .signup-card select.input-dropdown:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(147, 156, 166, 0.3);
+  }
+  /* Mobile number and country code */
+.signup-card .mobile-input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.signup-card .country-code-select {
+  padding: 10px 12px;
+  width: 100px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.881);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #080707;
+  outline: none;
+}
+h2{
+
+
+    margin-bottom: 20px;
+}
+/* Mobile number input field styling */
+.signup-card input#mobile {
+  width: 100%;
+  position: relative;
+top: 6px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.881);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #080707;
+  outline: none;
+}
+
+/* Focus state styling for inputs */
+.signup-card input:focus,
+.signup-card select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(147, 156, 166, 0.3);
+}
+
+  /* Subtle Fade-In Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-card {
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+  
+    .signup-card h2 {
+      font-size: 1.25rem;
+    }
+  
+    .signup-card input {
+      padding: 8px 10px;
+      font-size: 0.9rem;
+    }
+  
+    .signup-card button {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .signup-card {
+      padding: 1rem;
+    }
+  
+    .signup-card h2 {
+      font-size: 1rem;
+    }
+  
+    .signup-card input {
+      font-size: 0.85rem;
+    }
+  
+    .signup-card button {
+      font-size: 0.85rem;
+    }
+  }
+  

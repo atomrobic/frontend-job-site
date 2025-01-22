@@ -1,0 +1,252 @@
+.login-background {
+  background: url(https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 1rem;
+  position: relative; /* Required for positioning the blur effect */
+
+}
+
+/* Blurred Area */
+
+/* Login Card Styling - Glass Effect */
+.login-card {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for responsiveness */
+  padding: 2rem;
+  background: rgba(39, 36, 36, 0.178); /* Semi-transparent white */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(231, 225, 225, 0.219);
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+  border: 1px solid rgba(245, 240, 240, 0.934); /* Subtle border */
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+  background-image: url(https://images.pexels.com/photos/3745234/pexels-photo-3745234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: left;
+  
+  /* Shape Overlay */
+}
+
+
+/* Logo Section */
+.login-card .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+/* Login Title */
+.login-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ffffff; /* White text for contrast */
+  margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.login-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Semi-transparent border */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.881); /* Semi-transparent input background */
+  font-size: 1rem;
+  color: #080707; /* White text inside input fields */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(147, 156, 166, 0.3);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0f5c5571, #385471);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(4, 4, 4, 0.3);
+  color: #f6f5fa;
+}
+
+.login-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 122, 255, 0.5);
+}
+
+/* Add arrow after the button text on hover */
+.login-button::after {
+  content: ' →'; /* Unicode right arrow */
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.login-button:hover::after {
+  opacity: 1;
+}
+
+/* Link Styling */
+.login-card .login-link {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-card .login-link:hover {
+  color: #007aff;
+  text-decoration: underline;
+}
+
+/* Subtle Fade-In Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+    border-radius: 10px; /* Adjust border radius */
+  }
+
+  .login-card .logo {
+    font-size: 1.8rem; /* Scale down logo font size */
+  }
+
+  .login-card h2 {
+    font-size: 1.25rem; /* Scale down heading font size */
+  }
+
+  .login-input {
+    padding: 8px 10px; /* Adjust input padding */
+    font-size: 0.9rem; /* Scale down input font size */
+  }
+
+  .login-button {
+    padding: 10px; /* Adjust button padding */
+    font-size: 0.9rem; /* Scale down button font size */
+  }
+
+  .login-card .login-link {
+    font-size: 0.8rem; /* Scale down link font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1rem; /* Further reduce padding for very small screens */
+  }
+
+  .login-card .logo {
+    font-size: 1.5rem; /* Scale logo font size for small screens */
+  }
+
+  .login-card h2 {
+    font-size: 1rem; /* Scale heading font size for small screens */
+  }
+
+  .login-input {
+    font-size: 0.85rem; /* Adjust input font size */
+  }
+
+  .login-button {
+    font-size: 0.85rem; /* Adjust button font size */
+  }
+
+  .login-card .login-link {
+    font-size: 0.75rem; /* Adjust link font size */
+  }
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links.active {
+  display: block;
+}
+
+.menu-icon {
+  display: none; /* You can update this for responsiveness */
+}
+
+.about-container {
+  margin-top: 70px; /* Adjust this margin to match the navbar height */
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}

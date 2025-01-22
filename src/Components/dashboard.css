@@ -1,0 +1,14 @@
+/* General styling for the Dashboard */
+body {
+
+  font-family: Arial, sans-serif;
+  background-color: #000;
+
+}
+
+/* Dashboard container styling */
+.job_dashboard {
+  height: 100%;
+}
+
+/* Styling for Navbar component */

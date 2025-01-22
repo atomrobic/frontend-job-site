@@ -1,0 +1,9 @@
+Default background style
+.Container {
+    background-color: black; /* Default background color */
+    color: white; /* Text color for contrast */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  

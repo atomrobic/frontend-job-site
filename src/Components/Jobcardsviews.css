@@ -1,0 +1,85 @@
+/* Ensure the body and html cover the full height and width */
+.skills {
+  border: 1px solid #b2b2b2; /* Ash-colored border */
+  padding: 5px; /* Inner spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.skills:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .job-card-container {
+    width: 100%;
+    margin: 0;
+    
+  }
+
+  .job-card-content {
+    padding: 30px;
+  }
+
+  .skills .skill-card {
+    width: 30%;
+  }
+
+  .job-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-card-header .job-title {
+    font-size: 1.2rem;
+  }
+
+  .job-card-header .company-rating {
+    font-size: 1rem;
+  }
+
+  .job-card-footer {
+    display: block;
+  }
+
+  .job-card-footer p {
+    margin-bottom: 8px;
+  }
+
+  .apply-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile phones */
+  .skill {
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+ 
+  .skills {
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #1a1a1a;
+  }
+  
+  .job-card-header .job-title {
+    font-size: 1.1rem;
+  }
+
+  .job-card-header .company-rating {
+    font-size: 0.9rem;
+  }
+
+  .job-card-footer p {
+    font-size: 0.9rem;
+  }
+
+  .apply-btn {
+    padding: 10px 16px;
+  }
+}
