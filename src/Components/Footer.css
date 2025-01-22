@@ -2,3 +2,57 @@ body{
 
     background-color: black;
 }
+/* General Styles */
+section {
+    display: flex;
+    background-color: #0b0b0b; /* Example dark background */
+    padding: 2rem 1rem; /* Add some padding */
+  }
+  img.Icon{
+
+    color: #fcf9f9;
+    background-color: #0b0b0b;
+  }
+  section img {
+    margin: 0 auto; /* Center the logo */
+  }
+  
+  section p {
+    color: #b3b3b3; /* Light gray text */
+    margin-top: 5rem;
+  }
+  
+  section ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  section ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #333333;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  section ul li a:hover {
+    background-color: #1d72b8; /* Example hover effect */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    section {
+      flex-direction: column;
+    }
+  
+    section ul {
+      gap: 0.9rem;
+    }
+  }
+  
